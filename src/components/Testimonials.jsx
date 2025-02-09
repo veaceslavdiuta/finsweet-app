@@ -1,9 +1,9 @@
 function Testimonials() {
   return (
-    <section className="flex w-full justify-center py-32">
+    <section className="flex w-full justify-center bg-grey bg-opacity-50 py-32">
       <div className="flex w-full max-w-screen-xl justify-between gap-28">
         <div className="flex w-[30%] flex-col gap-4">
-          <h4 className="font-poppins text-4xl font-semibold leading-normal text-dark-blue">
+          <h4 className="text-4xll font-poppins font-semibold leading-normal text-dark-blue">
             What our clients say about us.
           </h4>
           <p className="font-poppins text-base font-normal leading-7 text-dark-blue opacity-70">
