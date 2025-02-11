@@ -1,5 +1,5 @@
 import FAQSection from '../components/FAQSection';
-import Hero from '../components/Hero';
+import HomeHero from '../components/HomeHero';
 import HowItWorks from '../components/HowItWorks';
 import InquiryForm from '../components/InquiryForm';
 import KeyFeatures from '../components/KeyFeatures';
@@ -10,7 +10,7 @@ import Testimonials from '../components/Testimonials';
 function Home() {
   return (
     <main className="flex flex-col">
-      <Hero />
+      <HomeHero />
       <HowItWorks />
       <OurProjects />
       <KeyFeatures />

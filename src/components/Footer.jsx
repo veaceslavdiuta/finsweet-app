@@ -1,10 +1,14 @@
+import { Link } from 'react-router-dom';
+
 function Footer() {
   return (
     <footer className="flex w-full justify-center bg-tint-blue">
       <div className="flex w-full max-w-screen-xl justify-between gap-36 pt-24">
         <div className="flex flex-col gap-28">
           <div className="flex flex-col gap-6">
-            <img src="./assets/LogoFooter.png" width={160} alt="Logo" />
+            <Link to="/">
+              <img src="./assets/LogoFooter.png" width={160} alt="Logo" />
+            </Link>
             <p className="non-italic font-poppins text-base font-medium text-white">
               We are always open to discuss your project and improve your online
               presence.

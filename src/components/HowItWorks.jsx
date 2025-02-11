@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function HowItWorks() {
   const workSteps = [
     {
@@ -41,7 +43,10 @@ function HowItWorks() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor.
           </p>
-          <button className="group flex items-center gap-4 font-poppins text-lg font-normal leading-8 text-royal-blue hover:text-tint-blue">
+          <Link
+            to="contact-us"
+            className="group flex items-center gap-4 font-poppins text-lg font-normal leading-8 text-royal-blue hover:text-tint-blue"
+          >
             Get in touch with us
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +60,7 @@ function HowItWorks() {
                 className="stroke-[#2405F2] group-hover:stroke-tint-blue"
               />
             </svg>
-          </button>
+          </Link>
         </div>
         <div className="grid grid-cols-2 gap-x-6 gap-y-12">
           {workSteps.map((item) => (
