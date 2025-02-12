@@ -1,6 +1,11 @@
 import AboutUsHero from '../components/AboutUsHero';
-import OurProcess from '../components/OurProcess';
 import WhoWeAre from '../components/WhoWeAre';
+import OurProcess from '../components/OurProcess';
+import OurMission from '../components/OurMission';
+import OurBenefits from '../components/OurBenefits';
+import OurTeam from '../components/OurTeam';
+
+
 
 function AboutUs() {
   return (
@@ -8,8 +13,9 @@ function AboutUs() {
       <AboutUsHero />
       <WhoWeAre />
       <OurProcess />
-      <section></section>
-      <section></section>
+      <OurMission />
+      <OurBenefits />
+      <OurTeam />
     </main>
   );
 }

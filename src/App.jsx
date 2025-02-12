@@ -9,10 +9,10 @@ function App() {
     <BrowserRouter>
       <Header />
 
-      <Routes>
-        <Route path="/" Component={Home} />
-        <Route path="/about-us" Component={AboutUs} />
-      </Routes>
+        <Routes>
+          <Route path="/" Component={Home} />
+          <Route path="/about-us" Component={AboutUs} />
+        </Routes>
 
       <Footer />
     </BrowserRouter>

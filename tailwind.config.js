@@ -11,6 +11,7 @@ module.exports = {
       'yelow': '#FCD980',
       'hover-yelow': '#FDE4A6',
       'grey': '#F4F6FC',
+      'greydark': '#F4F5F5;',
       'accent': '#EEF4FA',
       'black': '#00000',
       'hover-black': '#585858',
