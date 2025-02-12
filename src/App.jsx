@@ -6,18 +6,16 @@ import AboutUs from './routes/AboutUs';
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <Header />
+    <BrowserRouter>
+      <Header />
 
         <Routes>
           <Route path="/" Component={Home} />
           <Route path="/about-us" Component={AboutUs} />
         </Routes>
 
-        <Footer />
-      </BrowserRouter>
-    </div>
+      <Footer />
+    </BrowserRouter>
   );
 }
 
