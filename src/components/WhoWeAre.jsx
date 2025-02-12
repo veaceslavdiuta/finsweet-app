@@ -8,9 +8,9 @@ function WhoWeAre() {
           </h4>
           <div className="flex gap-16">
             <div className="flex flex-col gap-4">
-              <h2 className="font-poppins text-4xll font-semibold leading-normal text-dark-blue">
+              <h3 className="font-poppins text-4xll font-semibold leading-normal text-dark-blue">
                 Goal focussed
-              </h2>
+              </h3>
               <p className="font-poppins text-base font-normal leading-7 text-dark-blue opacity-70">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -19,9 +19,9 @@ function WhoWeAre() {
               </p>
             </div>
             <div className="flex flex-col gap-4">
-              <h2 className="font-poppins text-4xll font-semibold leading-normal text-dark-blue">
+              <h3 className="font-poppins text-4xll font-semibold leading-normal text-dark-blue">
                 Continuous improvement
-              </h2>
+              </h3>
               <p className="font-poppins text-base font-normal leading-7 text-dark-blue opacity-70">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
