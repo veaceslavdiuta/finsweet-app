@@ -1,4 +1,15 @@
+import { Link } from 'react-router-dom';
+
 function InquiryForm() {
+  function handleSubmit(e) {
+    e.preventDefault();
+    const userName = e.target.name.value;
+    const userEmail = e.target.email.value;
+    const userURL = e.target.url.value;
+
+    console.log({ userName, userEmail, userURL });
+  }
+
   return (
     <section className="flex w-full justify-center">
       <div className="flex w-full max-w-screen-xl items-start bg-tint-blue">
@@ -11,7 +22,10 @@ function InquiryForm() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.
           </p>
         </div>
-        <form className="flex w-1/2 flex-col justify-between gap-4 px-24 py-24">
+        <form
+          onSubmit={handleSubmit}
+          className="flex w-1/2 flex-col justify-between gap-4 px-24 py-24"
+        >
           <h5 className="font-poppins text-3xll font-normal leading-normal text-white">
             Send inquiry
           </h5>
@@ -21,23 +35,23 @@ function InquiryForm() {
           </p>
 
           <input
-            className="w-full rounded-lg border border-[rgba(255,255,255,0.20)] bg-tint-blue p-4 font-poppins text-base font-normal leading-7 text-grey opacity-50"
+            className="w-full rounded-lg border border-[rgba(255,255,255,0.20)] bg-tint-blue p-4 font-poppins text-base font-normal leading-7 text-grey opacity-50 outline-none"
             type="text"
-            name="yourName"
+            name="name"
             placeholder="Your Name"
           />
 
           <input
-            className="w-full rounded-lg border border-[rgba(255,255,255,0.20)] bg-tint-blue p-4 font-poppins text-base font-normal leading-7 text-grey opacity-50"
+            className="w-full rounded-lg border border-[rgba(255,255,255,0.20)] bg-tint-blue p-4 font-poppins text-base font-normal leading-7 text-grey opacity-50 outline-none"
             type="email"
             name="email"
             placeholder="Email"
           />
 
           <input
-            className="w-full rounded-lg border border-[rgba(255,255,255,0.20)] bg-tint-blue p-4 font-poppins text-base font-normal leading-7 text-grey opacity-50"
+            className="w-full rounded-lg border border-[rgba(255,255,255,0.20)] bg-tint-blue p-4 font-poppins text-base font-normal leading-7 text-grey opacity-50 outline-none"
             type="url"
-            name="designUrl"
+            name="url"
             placeholder="Paste your Figma design URL"
           />
 
@@ -45,7 +59,10 @@ function InquiryForm() {
             <button className="rounded-custom-41 border-none bg-yelow px-[51] py-[15px] font-poppins text-lg font-medium leading-8 hover:bg-hover-yelow">
               Send an Inquiry
             </button>
-            <button className="group flex items-center justify-center gap-4 font-poppins text-lg font-medium leading-8 text-white hover:text-greyblue">
+            <Link
+              to="/contact-us"
+              className="group flex items-center justify-center gap-4 font-poppins text-lg font-medium leading-8 text-white hover:text-greyblue"
+            >
               Get in touch with us
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +76,7 @@ function InquiryForm() {
                   className="stroke-[#F4F6FC] group-hover:stroke-greyblue"
                 />
               </svg>
-            </button>
+            </Link>
           </div>
         </form>
       </div>

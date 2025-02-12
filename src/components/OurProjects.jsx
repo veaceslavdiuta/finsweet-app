@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function OurProjects() {
   return (
     <section className="flex w-full justify-center py-32">
@@ -6,7 +8,10 @@ function OurProjects() {
           <h3 className="font-poppins text-5xl font-semibold leading-tight">
             View our projects
           </h3>
-          <button className="hover:text-hover-black group flex items-center gap-x-4 font-poppins text-base font-medium leading-7">
+          <Link
+            to="/portfolio"
+            className="group flex items-center gap-x-4 font-poppins text-base font-medium leading-7 hover:text-hover-black"
+          >
             View more
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -17,10 +22,10 @@ function OurProjects() {
             >
               <path
                 d="M24.5303 6.53033C24.8232 6.23744 24.8232 5.76256 24.5303 5.46967L19.7574 0.696699C19.4645 0.403806 18.9896 0.403806 18.6967 0.696699C18.4038 0.989593 18.4038 1.46447 18.6967 1.75736L22.9393 6L18.6967 10.2426C18.4038 10.5355 18.4038 11.0104 18.6967 11.3033C18.9896 11.5962 19.4645 11.5962 19.7574 11.3033L24.5303 6.53033ZM0 6.75H24V5.25H0V6.75Z"
-                className="group-hover:stroke-hover-black stroke-[#282938]"
+                className="stroke-[#282938] group-hover:stroke-hover-black"
               />
             </svg>
-          </button>
+          </Link>
         </div>
         <div className="flex justify-between gap-4">
           <div className="group relative overflow-hidden">
@@ -37,7 +42,10 @@ function OurProjects() {
                 Euismod faucibus turpis eu gravida mi. Pellentesque et velit
                 aliquam
               </p>
-              <button className="flex items-center gap-4 font-poppins text-base font-medium leading-7 text-yelow">
+              <Link
+                to="/portfolio"
+                className="flex items-center gap-4 font-poppins text-base font-medium leading-7 text-yelow"
+              >
                 View project
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +59,7 @@ function OurProjects() {
                     fill="#FCD980"
                   />
                 </svg>
-              </button>
+              </Link>
             </div>
           </div>
           <div className="flex flex-col justify-between">
@@ -65,7 +73,10 @@ function OurProjects() {
                 <h5 className="font-poppins text-2xl font-semibold leading-9 text-white">
                   Unisaas Website Design
                 </h5>
-                <button className="flex items-center gap-4 font-poppins text-base font-medium leading-7 text-yelow">
+                <Link
+                  to="/portfolio"
+                  className="flex items-center gap-4 font-poppins text-base font-medium leading-7 text-yelow"
+                >
                   View portfolio
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +90,7 @@ function OurProjects() {
                       fill="#FCD980"
                     />
                   </svg>
-                </button>
+                </Link>
               </div>
             </div>
 
@@ -93,7 +104,10 @@ function OurProjects() {
                 <h5 className="font-poppins text-2xl font-semibold leading-9 text-white">
                   Unisaas Website Design
                 </h5>
-                <button className="flex items-center gap-4 font-poppins text-base font-medium leading-7 text-yelow">
+                <Link
+                  to="/portfolio"
+                  className="flex items-center gap-4 font-poppins text-base font-medium leading-7 text-yelow"
+                >
                   View portfolio
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +121,7 @@ function OurProjects() {
                       fill="#FCD980"
                     />
                   </svg>
-                </button>
+                </Link>
               </div>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function FAQSection() {
   const questions = [
@@ -46,9 +47,12 @@ function FAQSection() {
           <h3 className="font-poppins text-4xll font-semibold leading-normal text-dark-blue">
             Frequently asked questions
           </h3>
-          <button className="font-poppins text-lg font-medium leading-8 text-royal-blue hover:text-tint-blue">
+          <Link
+            to="/contact-us"
+            className="font-poppins text-lg font-medium leading-8 text-royal-blue hover:text-tint-blue"
+          >
             Contact us for more info
-          </button>
+          </Link>
         </div>
         <div className="flex w-[71%] flex-col">
           {questions.map(({ number, question, answer }, index) => (

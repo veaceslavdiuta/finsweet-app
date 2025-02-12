@@ -17,6 +17,7 @@ module.exports = {
       'white': '#FFFFFF',
       'smoke-white': '#ECECF1',
       'sky': '#BBBBCB',
+      'greydark': '#F4F5F5;',
       'greyblue': 'rgba(244, 246, 252, 0.20)',
       'linear': 'linear-gradient(329deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%)',
     },

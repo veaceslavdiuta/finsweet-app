@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function Hero() {
   return (
     <section className="flex w-full justify-center bg-tint-blue py-32">
@@ -11,10 +13,16 @@ function Hero() {
             eiusmod tempor incididunt.
           </p>
           <div className="flex gap-x-10">
-            <button className="inline-flex items-center justify-center rounded-custom-41 bg-yelow px-14 py-4 font-poppins text-base font-semibold leading-8 hover:bg-hover-yelow">
+            <Link
+              to="/portfolio"
+              className="inline-flex items-center justify-center rounded-custom-41 bg-yelow px-14 py-4 font-poppins text-base font-semibold leading-8 hover:bg-hover-yelow"
+            >
               View our work
-            </button>
-            <button className="group flex items-center justify-center gap-4 font-poppins text-base font-medium leading-7 text-white hover:text-greyblue">
+            </Link>
+            <Link
+              to="/pricing"
+              className="group flex items-center justify-center gap-4 font-poppins text-base font-medium leading-7 text-white hover:text-greyblue"
+            >
               View Pricing
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +36,7 @@ function Hero() {
                   className="stroke-[#F4F6FC] group-hover:stroke-greyblue"
                 />
               </svg>
-            </button>
+            </Link>
           </div>
         </div>
         <div className="w-1/2">
