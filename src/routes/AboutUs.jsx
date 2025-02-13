@@ -5,8 +5,6 @@ import OurMission from '../components/OurMission';
 import OurBenefits from '../components/OurBenefits';
 import OurTeam from '../components/OurTeam';
 
-
-
 function AboutUs() {
   return (
     <main className="flex flex-col">

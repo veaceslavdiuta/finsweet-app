@@ -1,6 +1,6 @@
 import LogoSection from './LogoSection';
 
-function OurBenefits() {
+function OurBenefits({ isFeaturePage = false }) {
   const benefits = [
     {
       id: 1,
@@ -28,6 +28,7 @@ function OurBenefits() {
   return (
     <section className="flex w-full justify-center py-32">
       <div className="flex w-full max-w-screen-xl flex-col items-center gap-12">
+        {isFeaturePage && <LogoSection />}
         <h2 className="w-1/2 text-center font-poppins text-5xl font-semibold leading-snug text-dark-blue">
           The benefits of woring with us
         </h2>
@@ -50,7 +51,7 @@ function OurBenefits() {
           )}
         </div>
 
-        <LogoSection />
+        {!isFeaturePage && <LogoSection />}
       </div>
     </section>
   );
