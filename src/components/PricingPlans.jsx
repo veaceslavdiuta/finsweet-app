@@ -49,7 +49,7 @@ function PricingPlans() {
   ];
 
   return (
-    <section className="flex w-full justify-center py-32">
+    <section className="flex w-full justify-center pt-32">
       <div className="flex w-full max-w-screen-xl flex-col items-center gap-16">
         <div className="flex flex-col items-center gap-4">
           <h1 className="font-poppins text-5xl font-semibold leading-snug text-dark-blue">
