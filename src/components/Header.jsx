@@ -1,17 +1,27 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+
+const navItems = [
+  { id: 1, page: 'Home', navLink: '' },
+  { id: 2, page: 'About Us', navLink: 'about-us' },
+  { id: 3, page: 'Features', navLink: 'features' },
+  { id: 4, page: 'Pricing', navLink: 'pricing' },
+  { id: 5, page: 'Portfolio', navLink: 'portfolio' },
+  { id: 6, page: 'Blog', navLink: 'blog' },
+];
 
 function Header() {
+  const location = useLocation();
   const [activeLink, setActiveLink] = useState('Home');
 
-  const navItems = [
-    { id: 1, page: 'Home', navLink: '' },
-    { id: 2, page: 'About Us', navLink: 'about-us' },
-    { id: 3, page: 'Features', navLink: 'features' },
-    { id: 4, page: 'Pricing', navLink: 'pricing' },
-    { id: 5, page: 'Portfolio', navLink: 'portfolio' },
-    { id: 6, page: 'Blog', navLink: 'blog' },
-  ];
+  useEffect(() => {
+    const currentNavItem = navItems.find(
+      (item) => `/${item.navLink}` === location.pathname
+    );
+    if (currentNavItem) {
+      setActiveLink(currentNavItem.page);
+    }
+  }, [location.pathname]);
 
   return (
     <header className="flex w-full justify-center bg-tint-blue">
@@ -35,6 +45,7 @@ function Header() {
           </ul>
           <Link
             to="/contact-us"
+            onClick={() => setActiveLink('/contact-us')}
             className="rounded-custom-41 border-2 border-greyblue px-12 py-4 font-poppins text-base font-medium text-sky hover:border-white hover:text-white"
           >
             Contact Us
