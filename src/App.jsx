@@ -6,6 +6,7 @@ import AboutUs from './routes/AboutUs';
 import Features from './routes/Features';
 import Pricing from './routes/Pricing';
 import Portfolio from './routes/Portfolio';
+import Blog from './routes/Blog';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/features" Component={Features} />
         <Route path="/pricing" Component={Pricing} />
         <Route path="/portfolio" Component={Portfolio} />
+        <Route path="/blog" Component={Blog} />
       </Routes>
 
       <Footer />
