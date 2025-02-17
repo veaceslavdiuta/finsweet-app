@@ -1,10 +1,11 @@
+import BlogPosts from '../components/BlogPosts';
 import FeaturedBlog from '../components/FeaturedBlog';
 
 function Blog() {
   return (
     <main className="flex flex-col">
       <FeaturedBlog />
-      <section></section>
+      <BlogPosts />
     </main>
   );
 }
