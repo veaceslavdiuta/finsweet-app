@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 function CallToActionSection() {
   return (
     <section className="flex w-full justify-center pb-32 pt-8">
-      <div className="flex w-1/2 max-w-screen-xl flex-col items-center gap-5">
+      <div className="flex w-[35%] max-w-screen-xl flex-col items-center gap-5">
         <h2 className="text-center font-poppins text-5xl font-semibold leading-snug text-dark-blue">
           Let's build something great together
         </h2>

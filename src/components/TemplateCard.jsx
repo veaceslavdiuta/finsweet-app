@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 
 function TemplateCard({
+  id,
   templateNumber,
   templateDescription,
   templateImage,
@@ -20,7 +21,10 @@ function TemplateCard({
           {templateDescription}
         </p>
       </div>
-      <Link className="group flex items-center gap-4 font-poppins text-base font-medium leading-6 text-dark-blue hover:text-hover-black">
+      <Link
+        to={`/read-case/${id}`}
+        className="group flex items-center gap-4 font-poppins text-base font-medium leading-6 text-dark-blue hover:text-hover-black"
+      >
         {templateLinkName}
         <svg
           xmlns="http://www.w3.org/2000/svg"
