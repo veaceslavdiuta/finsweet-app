@@ -8,6 +8,7 @@ import Pricing from './routes/Pricing';
 import Portfolio from './routes/Portfolio';
 import Blog from './routes/Blog';
 import ReadCase from './routes/ReadCase';
+import ReadBlog from './routes/ReadBlog';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/portfolio" Component={Portfolio} />
         <Route path="/blog" Component={Blog} />
         <Route path="/read-case/:id" Component={ReadCase} />
+        <Route path="/read-blog/:id" Component={ReadBlog} />
       </Routes>
 
       <Footer />

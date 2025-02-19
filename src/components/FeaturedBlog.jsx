@@ -20,7 +20,7 @@ function FeaturedBlog() {
         </p>
         <Link
           className="font-poppins text-base font-normal leading-7 text-royal-blue opacity-70 hover:text-dark-blue"
-          to="/"
+          to="/blog"
         >
           Read More
         </Link>

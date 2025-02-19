@@ -1,9 +1,6 @@
 import BlogCard from './BlogCard';
-import { getPosts } from '../services/posts.services';
 
-function BlogPosts() {
-  const posts = getPosts();
-
+function BlogPosts(props) {
   return (
     <section className="flex w-full justify-center pb-32">
       <div className="flex w-full max-w-screen-xl flex-col items-center gap-12">
@@ -11,7 +8,7 @@ function BlogPosts() {
           Our Blog
         </h2>
         <div className="grid grid-cols-3 grid-rows-3 gap-x-8 gap-y-16">
-          {posts.map((post) => (
+          {props.posts.map((post) => (
             <BlogCard key={post.id} {...post} />
           ))}
         </div>

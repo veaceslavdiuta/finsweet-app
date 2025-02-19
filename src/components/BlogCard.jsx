@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-function BlogCard({ postImage, postData, postName, postDescription }) {
+function BlogCard({ id, postImage, postData, postName, postDescription }) {
   return (
     <div className="flex flex-col gap-4">
       <img src={`/assets/${postImage}`} alt={postImage} />
@@ -14,7 +14,7 @@ function BlogCard({ postImage, postData, postName, postDescription }) {
         {postDescription}
       </p>
       <Link
-        to="/blog"
+        to={`/read-blog/${id}`}
         className="group flex items-center gap-4 text-base font-medium leading-7 hover:text-hover-black"
       >
         Read More
