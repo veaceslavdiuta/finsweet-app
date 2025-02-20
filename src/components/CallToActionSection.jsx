@@ -13,7 +13,7 @@ function CallToActionSection() {
         </p>
         <Link
           className="rounded-custom-41 bg-yelow px-16 py-4 font-poppins text-lg font-semibold leading-8 text-dark-blue hover:bg-hover-yelow"
-          to="contact-us"
+          to="/contact-us"
         >
           Contact Us
         </Link>

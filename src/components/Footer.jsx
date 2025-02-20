@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <footer className="flex w-full justify-center bg-tint-blue">
-      <div className="flex w-full max-w-screen-xl justify-between gap-36 pt-24">
-        <div className="flex flex-col gap-28">
+    <footer className="w-full bg-tint-blue">
+      <div className="pt- container mx-auto flex max-w-screen-xl flex-wrap items-start justify-between gap-16 px-8 pb-5 pt-24 md:flex-nowrap xl:px-0">
+        <div className="flex w-full flex-col gap-16 md:w-1/2">
           <div className="flex flex-col gap-6">
             <Link to="/">
               <img src="./assets/LogoFooter.png" width={160} alt="Logo" />
@@ -14,7 +14,7 @@ function Footer() {
               presence.
             </p>
           </div>
-          <div className="flex gap-7 bg-yelow px-9 py-4">
+          <div className="flex flex-wrap gap-7 bg-yelow px-9 py-4">
             <div>
               <h4 className="non-italic font-poppins text-lg font-medium text-dark-blue">
                 Email me at
@@ -28,12 +28,12 @@ function Footer() {
                 Call us
               </h4>
               <p className="non-italic font-poppins text-base font-normal text-dark-blue opacity-80">
-                0927 6277 28525
+                0927-6277-28525
               </p>
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-6">
+        <div className="flex w-full flex-col gap-6 md:w-1/2">
           <h2 className="non-italic font-poppins text-5xl font-semibold text-white">
             Lets Talk!
           </h2>

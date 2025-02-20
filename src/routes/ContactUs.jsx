@@ -18,6 +18,8 @@ function ContactUs() {
     console.log('Submitted Data:', formData);
   };
 
+  console.log(formData);
+
   return (
     <main className="container mx-auto max-w-screen-xl py-32">
       <div className="flex flex-col items-center gap-16">
