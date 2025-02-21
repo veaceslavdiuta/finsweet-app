@@ -33,19 +33,19 @@ function HowItWorks() {
   ];
 
   return (
-    <section className="flex w-full justify-center bg-grey py-32">
-      <div className="flex w-full max-w-screen-xl gap-x-36">
-        <div className="flex flex-col gap-4">
-          <h2 className="font-poppins text-5xl font-semibold leading-tight">
+    <section className="w-full bg-grey px-8 py-20 lg:py-32 2xl:px-0">
+      <div className="container mx-auto flex max-w-screen-xl flex-wrap items-start justify-center gap-20 lg:flex-nowrap xl:gap-36">
+        <div className="flex flex-col items-center gap-4 lg:items-start">
+          <h2 className="text-center font-poppins text-4xl font-semibold leading-tight sm:text-5xl lg:text-start">
             How we work
           </h2>
-          <p className="font-poppins text-base font-normal leading-7 opacity-70">
+          <p className="text-center font-poppins text-sm font-normal leading-7 opacity-70 sm:text-base lg:text-start">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor.
           </p>
           <Link
             to="contact-us"
-            className="group flex items-center gap-4 font-poppins text-lg font-normal leading-8 text-royal-blue hover:text-tint-blue"
+            className="group flex items-center gap-4 font-poppins text-base font-normal leading-8 text-royal-blue hover:text-tint-blue sm:text-lg"
           >
             Get in touch with us
             <svg
@@ -62,14 +62,17 @@ function HowItWorks() {
             </svg>
           </Link>
         </div>
-        <div className="grid grid-cols-2 gap-x-6 gap-y-12">
+        <div className="grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2">
           {workSteps.map((item) => (
-            <div className="flex flex-col items-start gap-4" key={item.id}>
+            <div
+              className="flex flex-col items-start gap-1 sm:gap-4"
+              key={item.id}
+            >
               <img src={`/assets/${item.stepImage}`} alt="MaskGroup" />
-              <h4 className="font-poppins text-3xll font-medium">
+              <h4 className="font-poppins text-2xl font-medium sm:text-3xll">
                 {item.stepName}
               </h4>
-              <p className="font-poppins text-base font-normal leading-7 opacity-70">
+              <p className="font-poppins text-sm font-normal leading-7 opacity-70 sm:text-base">
                 {item.stepDescription}
               </p>
             </div>

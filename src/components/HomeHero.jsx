@@ -2,20 +2,20 @@ import { Link } from 'react-router-dom';
 
 function Hero() {
   return (
-    <section className="flex w-full justify-center bg-tint-blue py-32">
-      <div className="flex w-full max-w-screen-xl items-center justify-between gap-x-16">
-        <div className="flex w-1/2 flex-col gap-y-8">
-          <h1 className="non-italic font-poppins text-6xl font-semibold leading-snug text-white">
+    <section className="w-full bg-tint-blue px-8 py-20 lg:py-32 2xl:px-0">
+      <div className="container mx-auto flex max-w-screen-xl flex-wrap items-center justify-center gap-8 lg:flex-nowrap lg:gap-16">
+        <div className="flex flex-col items-center gap-4 lg:w-1/2 lg:items-start lg:gap-8">
+          <h1 className="non-italic text-center font-poppins text-4xl font-semibold leading-snug text-white sm:text-5xl lg:text-start lg:text-6xl">
             Building stellar websites for early startups
           </h1>
-          <p className="non-italic font-poppins text-base font-normal text-white opacity-70">
+          <p className="non-italic text-center font-poppins text-sm font-normal text-white opacity-70 sm:text-base lg:text-start">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt.
           </p>
-          <div className="flex gap-x-10">
+          <div className="flex flex-wrap justify-center gap-5 lg:gap-10">
             <Link
               to="/portfolio"
-              className="inline-flex items-center justify-center rounded-custom-41 bg-yelow px-14 py-4 font-poppins text-base font-semibold leading-8 hover:bg-hover-yelow"
+              className="inline-flex items-center justify-center rounded-custom-41 bg-yelow px-9 py-2 font-poppins text-base font-medium leading-8 hover:bg-hover-yelow sm:px-14 sm:py-4 sm:font-semibold"
             >
               View our work
             </Link>
@@ -39,7 +39,7 @@ function Hero() {
             </Link>
           </div>
         </div>
-        <div className="w-1/2">
+        <div className="lg:w-1/2">
           <img src="/assets/Illustration.png" alt="HeroImage" />
         </div>
       </div>

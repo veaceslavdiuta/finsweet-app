@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <footer className="w-full bg-tint-blue">
-      <div className="pt- container mx-auto flex max-w-screen-xl flex-wrap items-start justify-between gap-16 px-8 pb-5 pt-24 md:flex-nowrap xl:px-0">
+    <footer className="w-full bg-tint-blue px-8 pb-5 pt-24 2xl:px-0">
+      <div className="container mx-auto flex max-w-screen-xl flex-wrap items-start justify-between gap-16 md:flex-nowrap">
         <div className="flex w-full flex-col gap-16 md:w-1/2">
           <div className="flex flex-col gap-6">
             <Link to="/">
