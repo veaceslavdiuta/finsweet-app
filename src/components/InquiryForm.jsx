@@ -11,25 +11,25 @@ function InquiryForm() {
   }
 
   return (
-    <section className="flex w-full justify-center">
-      <div className="flex w-full max-w-screen-xl items-start bg-tint-blue">
-        <div className="bg-gray-200 flex w-1/2 flex-col items-center justify-center gap-6 bg-cover bg-center bg-no-repeat px-24 py-24">
-          <h3 className="font-poppins text-6xl font-semibold leading-snug text-white">
+    <section className="w-full bg-tint-blue px-8 py-20 lg:py-32 2xl:px-0">
+      <div className="container mx-auto flex max-w-screen-xl flex-col items-start gap-10 md:flex-row">
+        <div className="flex w-full flex-col items-center justify-center gap-3 bg-cover sm:gap-6 md:w-1/2">
+          <h3 className="text-center font-poppins text-4xl font-semibold leading-snug text-white md:text-start md:text-5xl lg:text-6xl">
             Building stellar websites for early startups
           </h3>
-          <p className="font-poppins text-base font-medium leading-7 text-white">
+          <p className="text-center font-poppins text-sm font-medium leading-7 text-white md:text-start md:text-base">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.
           </p>
         </div>
         <form
           onSubmit={handleSubmit}
-          className="flex w-1/2 flex-col justify-between gap-4 px-24 py-24"
+          className="flex w-full flex-col justify-between gap-2 md:w-1/2 md:gap-4"
         >
-          <h5 className="font-poppins text-3xll font-normal leading-normal text-white">
+          <h5 className="font-poppins text-2xl font-normal leading-normal text-white md:text-3xll">
             Send inquiry
           </h5>
-          <p className="pb-6 font-poppins text-base font-medium leading-7 text-grey">
+          <p className="pb-6 font-poppins text-sm font-medium leading-7 text-grey md:text-base">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore.
           </p>
@@ -55,13 +55,13 @@ function InquiryForm() {
             placeholder="Paste your Figma design URL"
           />
 
-          <div className="flex flex-col justify-center gap-7 pt-10">
-            <button className="rounded-custom-41 border-none bg-yelow px-[51] py-[15px] font-poppins text-lg font-medium leading-8 hover:bg-hover-yelow">
+          <div className="flex flex-col justify-center gap-3 pt-10 sm:gap-7">
+            <button className="rounded-custom-41 border-none bg-yelow px-[51] py-[15px] font-poppins text-base font-medium leading-8 hover:bg-hover-yelow sm:text-lg">
               Send an Inquiry
             </button>
             <Link
               to="/contact-us"
-              className="group flex items-center justify-center gap-4 font-poppins text-lg font-medium leading-8 text-white hover:text-greyblue"
+              className="group flex items-center justify-center gap-4 font-poppins text-base font-medium leading-8 text-white hover:text-greyblue sm:text-lg"
             >
               Get in touch with us
               <svg

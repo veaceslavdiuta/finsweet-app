@@ -16,7 +16,7 @@ function Home() {
       <KeyFeatures />
       <Testimonials />
       <FAQSection />
-      <InquiryForm />d
+      <InquiryForm />
       <OurBlog />
     </main>
   );
