@@ -27,14 +27,17 @@ function OurProcess() {
   ];
 
   return (
-    <section className="flex w-full justify-center py-32">
-      <div className="flex w-full max-w-screen-xl flex-col items-center gap-12">
-        <h2 className="font-poppins text-5xl font-semibold leading-snug text-dark-blue">
+    <section className="w-full px-8 py-20 lg:py-32 2xl:px-0">
+      <div className="container mx-auto flex max-w-screen-xl flex-col items-center gap-12">
+        <h2 className="text-center font-poppins text-4xl font-semibold leading-snug text-dark-blue sm:text-5xl lg:text-start">
           The process we follow
         </h2>
-        <div className="flex gap-14">
+        <div className="flex flex-wrap gap-14 lg:flex-nowrap">
           {processSteps.map(({ id, processName, processDescription }) => (
-            <div key={id} className="flex flex-col gap-8">
+            <div
+              key={id}
+              className="flex flex-col justify-center gap-4 sm:gap-8"
+            >
               <div className="flex items-center gap-6">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

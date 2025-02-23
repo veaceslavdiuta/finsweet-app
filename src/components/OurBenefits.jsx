@@ -26,24 +26,24 @@ function OurBenefits({ isFeaturePage = false }) {
   ];
 
   return (
-    <section className="flex w-full justify-center py-32">
-      <div className="flex w-full max-w-screen-xl flex-col items-center gap-12">
+    <section className="w-full px-8 py-20 lg:py-32">
+      <div className="container mx-auto flex max-w-screen-xl flex-col items-center gap-12">
         {isFeaturePage && <LogoSection />}
-        <h2 className="w-1/2 text-center font-poppins text-5xl font-semibold leading-snug text-dark-blue">
-          The benefits of woring with us
+        <h2 className="text-center font-poppins text-4xl font-semibold leading-snug text-dark-blue md:w-1/2 md:text-5xl">
+          The benefits of working with us
         </h2>
-        <div className="flex justify-between gap-8">
+        <div className="flex flex-col justify-between gap-8 lg:flex-row">
           {benefits.map(
             ({ id, benefitTitle, benefitDescription, benefitIcon }) => (
               <div
                 key={id}
-                className="flex flex-col items-start gap-7 bg-grey p-12"
+                className="flex flex-col items-start gap-3 bg-grey p-6 sm:gap-7 sm:p-12"
               >
                 <img src={`/assets/${benefitIcon}`} alt="Icon" />
-                <h6 className="font-poppins text-2xl font-medium leading-7 text-dark-blue">
+                <h4 className="font-poppins text-xl font-normal leading-9 text-dark-blue sm:text-2xl">
                   {benefitTitle}
-                </h6>
-                <p className="font-poppins text-base font-normal leading-7 text-dark-blue opacity-70">
+                </h4>
+                <p className="font-poppins text-sm font-normal leading-7 text-dark-blue opacity-70 sm:text-base">
                   {benefitDescription}
                 </p>
               </div>
