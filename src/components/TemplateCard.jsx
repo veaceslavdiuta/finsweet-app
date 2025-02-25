@@ -9,21 +9,21 @@ function TemplateCard({
   templateBackground,
 }) {
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-3 sm:gap-6">
       <div className="p-10" style={{ background: templateBackground }}>
         <img src={`/assets/${templateImage}`} alt={templateImage} />
       </div>
       <div className="flex flex-col gap-3">
-        <h3 className="font-poppins text-4xll font-semibold leading-normal text-dark-blue">
+        <h3 className="font-poppins font-semibold leading-normal text-dark-blue sm:text-3xll lg:text-4xll">
           {templateNumber}
         </h3>
-        <p className="font-poppins text-base font-normal leading-7 text-dark-blue opacity-70">
+        <p className="font-poppins text-sm font-normal leading-7 text-dark-blue opacity-70 sm:text-base">
           {templateDescription}
         </p>
       </div>
       <Link
         to={`/read-case/${id}`}
-        className="group flex items-center gap-4 font-poppins text-base font-medium leading-6 text-dark-blue hover:text-hover-black"
+        className="group flex items-center gap-4 font-poppins text-sm font-medium leading-6 text-dark-blue hover:text-hover-black sm:text-base"
       >
         {templateLinkName}
         <svg

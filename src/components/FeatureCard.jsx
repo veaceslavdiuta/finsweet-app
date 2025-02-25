@@ -13,7 +13,7 @@ function FeatureSection({
     >
       <div className="container mx-auto flex max-w-screen-xl flex-col gap-20 lg:gap-24">
         <div
-          className={`flex flex-col items-center gap-10 lg:flex-row xl:gap-20 ${id % 2 === 0 ? 'flex-row-reverse' : ''}`}
+          className={`flex flex-col items-center gap-10 xl:gap-20 ${id % 2 === 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'}`}
         >
           <div className="flex flex-col gap-4">
             <h4 className="font-poppins text-base font-medium leading-8 text-black opacity-85 sm:text-lg">
