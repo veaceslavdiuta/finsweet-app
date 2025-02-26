@@ -2,20 +2,20 @@ import { Link } from 'react-router-dom';
 
 function BlogCard({ id, postImage, postData, postName, postDescription }) {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-2 sm:gap-4">
       <img src={`/assets/${postImage}`} alt={postImage} />
-      <p className="font-poppins text-base font-medium leading-7 text-dark-blue opacity-70">
+      <p className="font-poppins text-sm font-medium leading-7 text-dark-blue opacity-70 sm:text-base">
         {postData}
       </p>
-      <h5 className="font-poppins text-2xl font-normal leading-9 text-dark-blue">
+      <h5 className="font-poppins text-xl font-normal leading-7 text-dark-blue sm:text-2xl sm:leading-9">
         {postName}
       </h5>
-      <p className="font-poppins text-base font-normal leading-7 text-dark-blue opacity-70">
+      <p className="font-poppins text-sm font-normal leading-5 text-dark-blue opacity-70 sm:text-base sm:leading-7">
         {postDescription}
       </p>
       <Link
         to={`/read-blog/${id}`}
-        className="group flex items-center gap-4 text-base font-medium leading-7 hover:text-hover-black"
+        className="group flex items-center gap-4 text-sm font-medium leading-7 hover:text-hover-black sm:text-base"
       >
         Read More
         <svg

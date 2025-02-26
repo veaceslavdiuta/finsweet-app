@@ -25,8 +25,8 @@ function Header() {
   }, [location.pathname]);
 
   return (
-    <header className="w-full bg-tint-blue">
-      <div className="container mx-auto flex max-w-screen-xl items-center justify-between px-8 py-4 xl:px-0">
+    <header className="w-full bg-tint-blue px-8 py-4 2xl:px-0">
+      <div className="container mx-auto flex max-w-screen-xl items-center justify-between">
         <Link to="/" onClick={() => setActiveLink(navItems[0]['page'])}>
           <img src="./assets/LogoHeader.png" alt="Logo" />
         </Link>

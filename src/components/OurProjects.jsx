@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom';
 
 function OurProjects() {
   return (
-    <section className="flex w-full justify-center py-32">
-      <div className="flex w-full max-w-screen-xl flex-col gap-y-16">
-        <div className="flex justify-between">
-          <h3 className="font-poppins text-5xl font-semibold leading-tight">
+    <section className="w-full px-8 py-20 lg:py-32 2xl:px-0">
+      <div className="container mx-auto flex max-w-screen-xl flex-col gap-y-16">
+        <div className="flex flex-col items-center justify-between gap-5 md:flex-row">
+          <h3 className="text-center font-poppins text-4xl font-semibold leading-tight sm:text-5xl">
             View our projects
           </h3>
           <Link
@@ -27,24 +27,24 @@ function OurProjects() {
             </svg>
           </Link>
         </div>
-        <div className="flex justify-between gap-4">
+        <div className="flex flex-wrap justify-between gap-4 md:flex-nowrap">
           <div className="group relative overflow-hidden">
             <img
               className="object-cover"
               src="/assets/Card1.png"
               alt="CardImage"
             />
-            <div className="absolute inset-0 flex translate-x-[-100%] flex-col items-center justify-center gap-4 bg-gradient-to-r from-[#1C1E53] to-[rgba(28,30,83,0.42)] opacity-0 transition-all duration-500 ease-in-out group-hover:translate-x-0 group-hover:opacity-100">
-              <h5 className="font-poppins text-2xl font-semibold leading-9 text-white">
+            <div className="absolute inset-0 flex translate-x-[-100%] flex-col items-center justify-center gap-1 bg-gradient-to-r from-[#1C1E53] to-[rgba(28,30,83,0.42)] opacity-0 transition-all duration-500 ease-in-out group-hover:translate-x-0 group-hover:opacity-100 lg:gap-4">
+              <h5 className="text-center font-poppins text-xl font-semibold leading-9 text-white lg:text-2xl">
                 Workhub office Webflow Webflow Design
               </h5>
-              <p className="font-poppins text-base font-normal leading-7 text-white opacity-80">
+              <p className="hidden text-center font-poppins text-sm font-normal leading-7 text-white opacity-80 sm:block lg:text-base">
                 Euismod faucibus turpis eu gravida mi. Pellentesque et velit
                 aliquam
               </p>
               <Link
                 to="/portfolio"
-                className="flex items-center gap-4 font-poppins text-base font-medium leading-7 text-yelow"
+                className="flex items-center gap-4 font-poppins text-sm font-medium leading-7 text-yelow lg:text-base"
               >
                 View project
                 <svg
@@ -62,20 +62,20 @@ function OurProjects() {
               </Link>
             </div>
           </div>
-          <div className="flex flex-col justify-between">
+          <div className="flex w-full flex-col justify-between gap-4 sm:w-auto sm:flex-row md:flex-col">
             <div className="group relative overflow-hidden">
               <img
-                className="object-cover"
+                className="w-full object-cover"
                 src="/assets/Card3.png"
                 alt="CardImage"
               />
               <div className="absolute inset-0 flex translate-x-[-100%] flex-col items-center justify-center bg-gradient-to-r from-[#1C1E53] to-[rgba(28,30,83,0.42)] opacity-0 transition-all duration-500 ease-in-out group-hover:translate-x-0 group-hover:opacity-100">
-                <h5 className="font-poppins text-2xl font-semibold leading-9 text-white">
+                <h5 className="text-center font-poppins text-xl font-semibold leading-9 text-white lg:text-2xl">
                   Unisaas Website Design
                 </h5>
                 <Link
                   to="/portfolio"
-                  className="flex items-center gap-4 font-poppins text-base font-medium leading-7 text-yelow"
+                  className="flex items-center gap-4 font-poppins text-sm font-medium leading-7 text-yelow lg:text-base"
                 >
                   View portfolio
                   <svg
@@ -96,17 +96,17 @@ function OurProjects() {
 
             <div className="group relative overflow-hidden">
               <img
-                className="object-cover"
+                className="w-full object-cover"
                 src="/assets/Card2.png"
                 alt="CardImage"
               />
               <div className="absolute inset-0 flex translate-x-[-100%] flex-col items-center justify-center bg-gradient-to-r from-[#1C1E53] to-[rgba(28,30,83,0.42)] opacity-0 transition-all duration-500 ease-in-out group-hover:translate-x-0 group-hover:opacity-100">
-                <h5 className="font-poppins text-2xl font-semibold leading-9 text-white">
+                <h5 className="text-center font-poppins text-xl font-semibold leading-9 text-white lg:text-2xl">
                   Unisaas Website Design
                 </h5>
                 <Link
                   to="/portfolio"
-                  className="flex items-center gap-4 font-poppins text-base font-medium leading-7 text-yelow"
+                  className="flex items-center gap-4 font-poppins text-sm font-medium leading-7 text-yelow lg:text-base"
                 >
                   View portfolio
                   <svg

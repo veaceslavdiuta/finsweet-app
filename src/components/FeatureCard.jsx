@@ -9,20 +9,20 @@ function FeatureSection({
   return (
     <section
       key={id}
-      className={`flex w-full justify-center ${background === 'smokeyelow' ? 'bg-smokeyelow' : `bg-${background}`} ${id === 1 ? 'pt-0' : ''} py-32`}
+      className={`w-full ${background === 'smokeyelow' ? 'bg-smokeyelow' : `bg-${background}`} ${id === 1 ? 'pt-0' : ''} px-8 py-20 lg:py-32 2xl:px-0`}
     >
-      <div className="flex w-full max-w-screen-xl flex-col gap-24">
+      <div className="container mx-auto flex max-w-screen-xl flex-col gap-20 lg:gap-24">
         <div
-          className={`flex items-center gap-20 ${id % 2 === 0 ? 'flex-row-reverse' : ''}`}
+          className={`flex flex-col items-center gap-10 xl:gap-20 ${id % 2 === 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'}`}
         >
           <div className="flex flex-col gap-4">
-            <h4 className="font-poppins text-lg font-medium leading-8 text-black opacity-85">
+            <h4 className="font-poppins text-base font-medium leading-8 text-black opacity-85 sm:text-lg">
               {featureName}
             </h4>
-            <h3 className="font-poppins text-4xll font-semibold leading-normal text-dark-blue">
+            <h3 className="text-center font-poppins text-3xl font-semibold leading-9 text-dark-blue sm:text-4xll sm:leading-normal lg:text-start">
               {featureTitle}
             </h3>
-            <p className="font-poppins text-base font-normal leading-7 text-dark-blue opacity-60">
+            <p className="font-poppins text-sm font-normal leading-7 text-dark-blue opacity-60 sm:text-base lg:text-start">
               {featureDescription}
             </p>
           </div>

@@ -1,9 +1,9 @@
 function OurMission() {
   return (
-    <section className="flex w-full justify-center bg-accent py-32">
-      <div className="flex w-full max-w-screen-xl flex-col gap-24">
-        <div className="flex gap-36">
-          <div className="flex flex-col gap-4">
+    <section className="w-full bg-accent px-8 py-20 lg:py-32 2xl:px-0">
+      <div className="container mx-auto flex max-w-screen-xl flex-col gap-12 md:gap-24">
+        <div className="flex flex-col gap-6 lg:flex-row lg:gap-36">
+          <div className="flex flex-col gap-2 sm:gap-4">
             <h4 className="font-poppins text-base font-medium leading-7 text-dark-blue">
               Our Mission
             </h4>
@@ -19,9 +19,13 @@ function OurMission() {
           </div>
           <img src="/assets/ourMissionImage1.png" alt="Our Mission" />
         </div>
-        <div className="flex gap-36">
-          <img src="/assets/ourMissionImage2.png" alt="Our Mission" />
-          <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-10 lg:flex-row lg:gap-36">
+          <img
+            className="order-2 lg:order-1"
+            src="/assets/ourMissionImage2.png"
+            alt="Our Mission"
+          />
+          <div className="order-1 flex flex-col gap-2 sm:gap-4 lg:order-2">
             <h4 className="font-poppins text-base font-medium leading-7 text-dark-blue">
               Our Vision
             </h4>

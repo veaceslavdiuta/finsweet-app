@@ -1,14 +1,14 @@
 function PortfolioHero() {
   return (
-    <section className="flex w-full justify-center bg-grey py-24">
-      <div className="flex w-full max-w-screen-xl flex-col items-center">
-        <h4 className="font-poppins text-base font-medium leading-7 text-dark-blue opacity-70">
+    <section className="w-full bg-grey px-8 py-20 lg:py-24 2xl:px-0">
+      <div className="container mx-auto flex max-w-screen-xl flex-col items-center">
+        <h4 className="text-center font-poppins text-sm font-medium leading-7 text-dark-blue opacity-70 sm:text-base">
           What we created
         </h4>
-        <h1 className="font-poppins text-5xl font-semibold leading-snug text-dark-blue">
+        <h1 className="ont-poppins text-center text-4xl font-semibold leading-snug text-dark-blue sm:text-5xl">
           Our Work Portfolio
         </h1>
-        <p className="w-[58%] pb-8 pt-6 text-center font-poppins text-base font-medium leading-7 text-dark-blue opacity-70">
+        <p className="pb-8 pt-6 text-center font-poppins text-sm font-medium leading-7 text-dark-blue opacity-70 sm:text-base md:w-[58%]">
           We help teams create great digital products by providing them with
           tools and technology to make the design-to-code process universally
           accessible.
